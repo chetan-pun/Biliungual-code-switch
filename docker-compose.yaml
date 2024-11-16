@@ -1,0 +1,15 @@
+services:
+  code-switch:
+    build:
+      context: .
+      args:
+        INSTALL_GPU: "${INSTALL_GPU:-false}"
+    image: my-python-app-${TARGET:-cpu}
+    command: jupyter lab --ip='*' --NotebookApp.token='' --NotebookApp.password='' --no-browser
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    environment:
+    - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-}
+    runtime: ${RUNTIME:-}
