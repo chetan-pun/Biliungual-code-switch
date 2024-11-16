@@ -1,0 +1,53 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Venv
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor config files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python distribution / packaging
+*.egg-info/
+.dist/
+build/
+dist/
+
+# Docker related files
+*.log
+docker-compose.override.yml
+
+# Python egg caches
+.eggs/
+
+# pytest
+.cache/
+
+# flake8, coverage, and other tools
+*.cover
+.coverage.*
+nosetests.xml
+coverage.xml
+*.hypothesis/
+
+# Environment variable files
+.env
+.env.*  # For multiple env files
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
