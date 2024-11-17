@@ -4,7 +4,7 @@ services:
       context: .
       args:
         INSTALL_GPU: "${INSTALL_GPU:-false}"
-    image: my-python-app-${TARGET:-cpu}
+    image: bilingual-code-switch-${TARGET:-cpu}
     command: jupyter lab --ip='*' --NotebookApp.token='' --NotebookApp.password='' --no-browser
     ports:
       - "8888:8888"
